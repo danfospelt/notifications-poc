@@ -40,16 +40,4 @@ public class ChatMessageHandler extends TextWebSocketHandler {
             webSocketSession.sendMessage(message);
         }
     }
-
-    /*public void sendMessage(String message) {
-        for (WebSocketSession session : webSocketSessions) {
-            if (session.isOpen()) {
-                try {
-                    session.sendMessage(new TextMessage(message));
-                } catch (Exception e) {
-                    LOGGER.error("Failed to send message: {}", message, e);
-                }
-            }
-        }
-    }*/
 }
